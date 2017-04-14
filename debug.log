@@ -1,3 +1,0 @@
-[0412/090924.624:ERROR:crash_report_database_win.cc(563)] CreateDirectory C:\Program Files (x86)\temp: Отказано в доступе. (0x5)
-[0412/090924.689:ERROR:registration_protocol_win.cc(83)] TransactNamedPipe: Канал был закрыт. (0x6D)
-[0412/090924.705:ERROR:crashpad_win.cc(223)] Crashpad handler failed to start, crash reporting disabled
