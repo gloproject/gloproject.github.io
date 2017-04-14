@@ -1,0 +1,835 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: 'Gotham Rounded Medium';
+	src: url('../fonts/GothamRounded-Medium.eot');
+	src: url('../fonts/GothamRounded-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamRounded-Medium.woff2') format('woff2'),
+		url('../fonts/GothamRounded-Medium.woff') format('woff'),
+		url('../fonts/GothamRounded-Medium.ttf') format('truetype'),
+		url('../fonts/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Rounded Bold';
+	src: url('../fonts/GothamRounded-Bold.eot');
+	src: url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamRounded-Bold.woff2') format('woff2'),
+		url('../fonts/GothamRounded-Bold.woff') format('woff'),
+		url('../fonts/GothamRounded-Bold.ttf') format('truetype'),
+		url('../fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Rounded Book';
+	src: url('../fonts/GothamRounded-Book.eot');
+	src: url('../fonts/GothamRounded-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamRounded-Book.woff2') format('woff2'),
+		url('../fonts/GothamRounded-Book.woff') format('woff'),
+		url('../fonts/GothamRounded-Book.ttf') format('truetype'),
+		url('../fonts/GothamRounded-Book.svg#GothamRounded-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*First page*/
+
+.first {
+	height: 100vh;
+	min-height: 250px;
+	background: url(../img/first/bg.png) no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.header {
+	margin: 0 auto;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.6rem;
+	display: block;
+	position: relative;
+	width: 55%;
+	height: 10rem;
+}
+
+.navbar {
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+	position: relative;
+	height: 10rem;
+	line-height: 10rem;
+	vertical-align: top;
+}
+
+.navbar-logo {
+	margin-top: 1rem;
+}
+
+.logo {
+	height: 65%;
+}
+
+.box {
+	height: 10rem;
+	display: inline-block;
+	position: relative;
+}
+
+.box a {
+	color: #fff;
+}
+
+.box span {
+	display: none;
+	position: relative;
+	top: -3rem;
+	background-color: rgb(22, 160, 133);
+	height: 2px;
+	width: 100%;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s; 
+}
+
+.box a:hover {
+	color: rgb(22, 160, 133);
+}
+
+.box a:hover + span {
+	display: block;
+}
+
+.home {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+h1 {
+	font-family: 'Gotham Rounded Bold';
+	font-size: 3.6rem;
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	font-family: 'Gotham Rounded Medium';
+	font-size: 1.6rem;
+	margin-bottom: 1.5rem;
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	border-radius: 3px;
+	background-color: rgb(22, 160, 133);
+	height: 5rem; 
+	width: 15rem;
+	line-height: 5rem;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 12px;
+	color: #fff;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;: 
+}
+
+.btn:hover {
+	color: rgb(22, 160, 133);
+	background-color: #000;
+}
+
+.icons {
+	display: block;
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.box-icon {
+	display: inline-block;
+	position: relative;
+	margin-right: 1rem;	
+	/*-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;*/ 
+}
+
+.icon {
+	width: 3.5rem;
+	display: block;
+}
+
+.icon-3 {
+	width: 3rem;
+}
+
+.icons-new {
+	position: absolute;
+	bottom: 2rem;
+	left: 50.22%;
+	transform: translateX(-50%);
+}
+
+.icon-new-1, .icon-new-2, .icon-new-3 {
+	opacity: 0;
+	/*-webkit-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s; */
+}
+
+.icons .box-1:hover .icon-1{
+	opacity: 0;
+}
+
+.icons-new .box-1:hover .icon-new-1{
+	opacity: 1;
+}
+
+.icons .box-2:hover .icon-2{
+	opacity: 0;
+}
+
+.icons-new .box-2:hover .icon-new-2{
+	opacity: 1;
+	width: 3.4rem;
+}
+
+.icons .box-3:hover .icon-3{
+	opacity: 0;
+}
+
+.icons-new .box-3:hover .icon-new-3{
+	opacity: 1;
+}
+
+
+/*Second page*/
+
+.second {
+	height: 80vh;
+	min-height: 200px;
+	background-color: #f5f6f7;
+	background-size: cover;
+	position: relative;
+}
+
+.second-box {
+	margin: 0;
+	z-index: 5;
+	width: 50%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 84%;
+}
+
+.text-box h2 {
+	text-transform: uppercase;
+	color: rgb(22, 160, 133);
+	font-size: 2.4rem;
+	font-family: 'Gotham Rounded Bold';
+	margin-bottom: 3rem;
+}
+
+.text-box p {
+	font-family: 'Gotham Rounded Book';
+	font-size: 1.4rem;
+	line-height: 3rem;
+	width: 70%;
+	text-align: left;
+	color: rgb(55,55,55);
+}
+
+.text-box p span {
+	font-family: 'Gotham Rounded Bold';
+}
+
+.text-box a {
+	margin-left: 0;
+	margin-top: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.2rem;
+}
+
+.hand {
+	position: absolute;
+	display: inline-block;
+	height: 100%;
+	right: 0;
+	z-index: 0;
+}
+
+.hand-img {
+	height: 75%;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+}
+
+/*Third page*/
+
+.third {
+	height: 80vh;
+	min-height: 200px;
+	background-color: #fff;
+	position: relative;
+}
+
+.phone-img {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+
+.phone {
+	width: 30rem;
+	margin-left: 3rem;
+	position: absolute;
+	bottom: 0;
+}
+
+.third-box {
+	display: inline-block;
+	position: relative;
+	width: 49%;
+	height: 100%;
+	vertical-align: top;
+}
+
+.third-text {
+	margin: 0 auto;
+	width: 85%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.third-text h2 {
+	text-transform: uppercase;
+	color: rgb(22, 160, 133);
+	font-size: 2.4rem;
+	font-family: 'Gotham Rounded Bold';
+	margin-bottom: 4rem;
+	color: rgb(55,55,55);
+}
+
+.third-text p {
+	font-family: 'Gotham Rounded Book';
+	font-size: 1.4rem;
+	line-height: 3rem;
+	text-align: left;
+	width: 85%;
+	color: rgb(55,55,55);
+}
+
+.third-text p span {
+	font-family: 'Gotham Rounded Bold';
+}
+
+.third-text .btn {
+	margin-left: 0;
+	margin-top: 4rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.2rem;
+	border-radius: 0;
+	margin-bottom: 4rem;
+	display: block;
+}
+
+.switch {
+	display: block;
+}
+
+.switch p {
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.5rem;
+}
+
+.left, .right {
+	display: inline-block;
+	width: 1.2rem;
+	margin-right: 1.8rem;
+}
+
+/*Fourth page*/
+
+.fourth {
+	height: 80vh;
+	min-height: 200px;
+	background-color: #f5f6f7;
+	background-size: cover;
+	position: relative;
+}
+
+.fourth-box {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-60%);
+	width: 100%;
+}
+
+.fourth-text {
+	padding-left: 7%;
+	display: inline-block;
+	width: 30%;
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	transform: translateY(40%);
+}
+
+.fourth-img {
+	/*margin-top: 7rem;*/
+	width: 5rem;
+	margin-bottom: 3rem;
+}
+
+.fourth-text h2 {
+	text-transform: uppercase;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.6rem;
+	margin-bottom: 3rem;
+	color: rgb(55,55,55);
+}
+
+.fourth-text p {
+	font-family: 'Gotham Rounded Medium';
+	font-size: 1.2rem;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	color: rgb(55,55,55);
+	line-height: 1.5rem;
+}
+
+.fourth-photos {
+	display: inline-block;
+	width: 69%;
+	position: relative;
+}
+
+.arrows {
+	padding-top: 1rem;
+	display: inline-block;
+	width: 100%;
+	text-align: right;
+	position: relative;
+	padding-right: 1.2rem;
+	margin-bottom: 3rem;
+}
+
+.photo {
+	text-align: right;
+	display: inline-block;
+	width: 49%;
+	padding-right: 2rem;
+	margin-right: 0rem; 
+	position: relative;
+}
+
+.fourth-photo {
+	width: 100%;
+}
+
+/*Fifth page*/
+
+.fifth {
+	height: 100vh;
+	min-height: 250px;
+	background: url(../img/fifth/bg.png) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.fifth-box {
+	text-align: center;
+	height: 25%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.fifth-box h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 2.4rem;
+	font-family: 'Gotham Rounded Bold';
+}
+
+.regist {
+	display: inline-block;
+	height: 5rem;
+	width: 25rem;
+	position: relative;
+	text-align: left;
+}
+
+input {
+	display: inline-block;
+	height: 100%; 
+	width: 80%;
+	border-radius: 3px 0px 0px 3px;
+	border: none;
+	text-transform: uppercase;
+	color: rgb(55,55,55);
+	text-align: center;
+	font-family: 'Gotham Rounded Medium';
+	font-size: 1.6rem;
+	outline: none;
+}
+
+
+.rect {
+	vertical-align: bottom;
+	margin-left: -0.3rem;
+	width: 20%;
+	height: 100%;
+	background-color: rgb(22, 160, 133);
+	position: relative;
+	display: inline-block;
+	border-radius: 0px 3px 3px 0px;
+}
+
+.check {
+	width: 50%;
+	margin-top: 30%;
+	margin-left: 13%;
+}
+
+/*Sixth page*/
+
+.sixth {
+	height: 50vh;
+	min-height: 200px;
+	background-color: #f5f6f7; 
+	background-size: cover;
+	position: relative;
+}
+
+.sixth-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	width: 80%;
+}
+
+.sixth-box h2 {
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: 'Gotham Rounded Bold';
+	color: rgb(55,55,55);
+}
+
+.sixth-box p {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-family: 'Gotham Rounded Medium';
+	color: rgb(55,55,55);
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+.sixth-box a {
+	display: inline-block;
+	width: 25rem;
+	height: 5rem;
+	text-align: left;
+	margin-right: 2rem;
+	position: relative;
+}
+
+.sixth-box span {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.6rem;
+	font-family: 'Gotham Rounded Bold';
+	width: 80%;
+	height: 100%;
+	background-color: #1abc9c;
+	border-radius: 3px 0px 0px 3px;
+	padding-top: 1.8rem;
+	padding-left: 2rem;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.sixth-box span:hover {
+	color: #000;
+}
+
+.store {
+	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+
+/*Seventh page*/
+
+.seventh {
+	height: 15vh;
+	background-color: #fff; 
+	background-size: cover;
+	position: relative;
+}
+
+.seventh-box {
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	transform: translateY(-50%);
+}
+
+.seventh a {
+	text-transform: uppercase;
+	color: rgb(55,55,55);
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.4rem;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;: 
+}
+
+.seventh-box a:hover {
+	color: #16a085;
+}
+
+.seventh span {
+	vertical-align: middle;
+	display: inline-block;
+	height: 2px;
+	width: 1.4rem;
+	background-color: #16a085;
+	transform: translateY(-100%) rotate(90deg);
+}
+
+.seventh p {
+	margin-top: 1rem;
+	font-family: 'Gotham Rounded Bold';
+	font-size: 1.4rem;
+	color: rgb(55,55,55);
+}
+
+.seventh-camera {
+	position: absolute;
+	width: 5rem;
+	top: 50%;
+	right: 5%;
+	transform: translateY(-50%);
+}
+
+/*Media*/
+
+@media(max-width: 1300px) {
+
+}
+
+@media(max-width: 1200px) {
+	html {
+		font-size: 9px;
+	}
+	.text-box p {
+		width: 100%;
+	}
+	.third-text {
+		width: 100%;
+	}
+	.third-text h2 {
+		margin-bottom: 2rem;
+	}
+	.third-text .btn {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}	
+
+@media(max-width: 768px) {
+	html {
+		font-size: 7px;
+	}
+	.fourth-box {
+		height: 100%;
+		position: relative;
+		transform: none;
+		top: 0;
+	}
+	.fourth-text {
+		width: 100%;
+		display: inline-block;
+		position: absolute;
+		top: -2rem;
+	}
+	.fourth-img {
+		margin-bottom: 1.5rem;
+	}
+	.fourth-text h2 {
+		margin-bottom: 1.5rem;
+	}
+	.fourth-photos {
+		/*height: 30%;*/
+		/*display: block;*/
+		width: 80%;
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.arrows {
+		margin-bottom: 1.5rem;
+	}
+	.photo {
+		margin-top: 0;
+	}
+}	
+
+@media(max-width: 660px) {
+	html {
+		font-size: 6px;
+	}
+	.home a {
+		font-size: 1.5rem;
+	}
+	.logo {
+		padding-left: 1rem;
+	}
+	.rect {
+		margin-left: -0.5rem;
+	}
+	.fourth-text h2 {
+		margin-bottom: 1rem;
+	}
+	.fourth-шьп {
+		margin-bottom: 1rem;
+	}
+}
+
+@media(max-width: 600px) {
+	.hand-img {
+		height: 70%;
+	}
+}
+
+@media(max-width: 560px) {
+	.hand-img {
+		height: 60%;
+	}
+}
+
+@media(max-width: 480px) {
+	.header {
+		width: 100%;
+	}
+	.home {
+		width: 100%;
+	}
+	.second-box {
+		width: 70%;
+	}
+	.text-box h2 {
+		margin-bottom: 1rem;
+	}
+	.text-box p {
+		line-height: 2.5rem;
+	}
+	.text-box a {
+		margin-top: 1rem;
+	}
+	.third-text h2 {
+		margin-bottom: 1rem;
+	}
+	.third-text p {
+		line-height: 2.5rem;
+	}
+	.third-text .btn {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.phone {
+		width: 25rem;
+	}
+}
+
+@media(max-width: 425px) {
+	.sixth-box a {
+		width: 20rem;
+	}
+}
+
+@media(max-width: 350px) {
+	html {
+		font-size: 6px;
+	}
+	.phone {
+		width: 23rem;
+		margin-left: 1rem;
+	}
+	.sixth-box {
+		width: 100%;
+	}
+	.sixth-box a {
+		width: 15rem;
+	}
+	.sixth-box a span {
+		font-size: 1.3rem;
+	}
+	.third-text .btn {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.third-text h2 {
+		margin-bottom: 0.5rem;
+	}
+	.third-text p {
+		line-height: 2rem;
+	}
+	.navbar {
+		width: 18%;
+	}
+}
