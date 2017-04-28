@@ -1,0 +1,106 @@
+/*Basic settings*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	text-align: center;
+	height: 100vh;
+	background-color: rgba(0,0,255,.3);
+}
+
+/*Mixins*/
+
+.box-shadow(@x: 0.5rem, @y: 0.5rem, @blur: 0rem, @color: rgba(0,0,0,.8)) {
+	box-shadow: @x @y @blur @color;
+}
+
+.transition(@property: all, @duration: 0.2s, @function: linear) {
+  -webkit-transition: @arguments;
+     -moz-transition: @arguments;
+       -o-transition: @arguments;
+          transition: @arguments;
+}
+
+/*Main page*/
+
+.header {
+	font-size: 4rem;
+	&-white {
+		color: white;
+	}
+	&-blue {
+		color: blue;
+	}
+	&-red {
+		color: red;
+	}
+}
+
+.main {
+	&-photo {
+		height: 200px;
+		&-1 {
+			background: url(../img/Ivanko.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&-2 {
+			background: url(../img/Oleynik.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&-3 {
+			background: url(../img/Russkikh.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&-4 {
+			background: url(../img/Vitushkina.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&:hover {
+			margin-left: -0.5rem;
+			margin-top: -0.5rem;
+			.box-shadow();
+		}
+	}
+	&-text {
+		.transition();
+		color: #fff;
+		background-color: rgba(0,0,0,.5);
+		height: 100%;
+		position: relative;
+		padding-top: 0.5rem;
+		opacity: 0;
+		&-2 {
+			h2:nth-child(1) {
+				margin-top: 1rem;
+				margin-bottom: -1.2rem;
+				line-height: 2.5rem;
+			}
+		}
+		a {
+			color: #fff;
+			.transition();
+			&:hover {
+				background-color: #fff;
+				color: #333;
+				text-decoration: none;
+			}
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+	&-btn {
+		display: block;
+		width: 150px;
+		border: 2px solid #fff;
+		border-radius: 5px;
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+}
+

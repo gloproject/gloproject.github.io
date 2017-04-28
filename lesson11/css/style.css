@@ -1,0 +1,105 @@
+/*Basic settings*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\000033}}
+html {
+  font-size: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\000037}}
+body {
+  text-align: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+/*Mixins*/
+/*Main page*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000328}}
+.header {
+  font-size: 4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000330}}
+.header-white {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000333}}
+.header-blue {
+  color: blue;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000336}}
+.header-red {
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000342}}
+.main-photo {
+  height: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000344}}
+.main-photo-1 {
+  background: url(../img/Ivanko.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000348}}
+.main-photo-2 {
+  background: url(../img/Oleynik.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000352}}
+.main-photo-3 {
+  background: url(../img/Russkikh.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000356}}
+.main-photo-4 {
+  background: url(../img/Vitushkina.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000360}}
+.main-photo:hover {
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  box-shadow: 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.8);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000366}}
+.main-text {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: relative;
+  padding-top: 0.5rem;
+  opacity: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000375}}
+.main-text-2 h2:nth-child(1) {
+  margin-top: 1rem;
+  margin-bottom: -1.2rem;
+  line-height: 2.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000381}}
+.main-text a {
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000384}}
+.main-text a:hover {
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000390}}
+.main-text:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/website\/Продвинутый курс\/lesson11\/less\/style\.less}line{font-family:\0000394}}
+.main-btn {
+  display: block;
+  width: 150px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
