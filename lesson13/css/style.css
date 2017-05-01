@@ -1,0 +1,259 @@
+/*Basic settings*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+}
+/*Fonts*/
+@font-face {
+  font-family: 'Panton ExtraBlack';
+  src: url('../fonts/Panton-ExtraBlack.eot');
+  src: url('../fonts/Panton-ExtraBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-ExtraBlack.woff2') format('woff2'), url('../fonts/Panton-ExtraBlack.woff') format('woff'), url('../fonts/Panton-ExtraBlack.ttf') format('truetype'), url('../fonts/Panton-ExtraBlack.svg#Panton-ExtraBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Black.eot');
+  src: url('../fonts/Panton-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-Black.woff2') format('woff2'), url('../fonts/Panton-Black.woff') format('woff'), url('../fonts/Panton-Black.ttf') format('truetype'), url('../fonts/Panton-Black.svg#Panton-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-ExtraBold.eot');
+  src: url('../fonts/Panton-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-ExtraBold.woff2') format('woff2'), url('../fonts/Panton-ExtraBold.woff') format('woff'), url('../fonts/Panton-ExtraBold.ttf') format('truetype'), url('../fonts/Panton-ExtraBold.svg#Panton-ExtraBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-SemiBold.eot');
+  src: url('../fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-SemiBold.woff2') format('woff2'), url('../fonts/Panton-SemiBold.woff') format('woff'), url('../fonts/Panton-SemiBold.ttf') format('truetype'), url('../fonts/Panton-SemiBold.svg#Panton-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Panton';
+  src: url('../fonts/Panton-Light.eot');
+  src: url('../fonts/Panton-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Panton-Light.woff2') format('woff2'), url('../fonts/Panton-Light.woff') format('woff'), url('../fonts/Panton-Light.ttf') format('truetype'), url('../fonts/Panton-Light.svg#Panton-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/*Color mixins*/
+/*Header*/
+.header {
+  width: 100%;
+  height: 8rem;
+  position: relative;
+  display: block;
+}
+.header-text {
+  display: inline-block;
+  font-family: 'Panton';
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: 27%;
+  color: #363636;
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+.header-call {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15rem;
+}
+.header-number {
+  display: block;
+  font-family: 'Panton';
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #363636;
+}
+.header-btn {
+  display: block;
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  color: #363636;
+}
+.header-btn:hover {
+  text-decoration: none;
+  color: #363636;
+}
+/*Menu*/
+.menu {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  background-color: #363636;
+  text-align: center;
+}
+.menu li {
+  display: inline-block;
+  font-family: 'Panton';
+  font-weight: 300;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  line-height: 5.5rem;
+}
+.menu a {
+  color: #fff;
+}
+.menu a:hover {
+  text-decoration: none;
+}
+/*Main page*/
+.main {
+  display: block;
+  height: 85vh;
+  width: 100%;
+  background: url(../img/main/bg.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.main-text {
+  padding-top: 10rem;
+}
+.main-text-1 {
+  margin-bottom: 1rem;
+}
+.main-pointer {
+  position: absolute;
+  width: 3rem;
+  left: 60%;
+  top: 68%;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.main h1 {
+  margin-top: 0;
+  font-family: 'Panton';
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5rem;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.main h2 {
+  font-family: 'Panton';
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.main h3 {
+  font-family: 'Panton';
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+.main p {
+  font-family: 'Panton';
+  font-weight: 600;
+}
+.main-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Panton';
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+  background-color: #059feb;
+  width: 20rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.main-btn a {
+  color: #fff;
+}
+.main-btn a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.main-img {
+  width: 3rem;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+/*Second page*/
+.second {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.second h2 {
+  font-family: 'Panton ExtraBlack';
+  font-weight: 900;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+.second span {
+  display: block;
+  margin: 0 auto;
+  background-color: #059feb;
+  height: 4px;
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+.second-text {
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 1.8rem;
+  width: 63%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.second-photo {
+  height: 10rem;
+}
+.second img {
+  width: 35%;
+  vertical-align: middle;
+  padding-top: 1rem;
+}
+.second-img {
+  padding-left: 1.5rem;
+  margin-top: -1rem;
+}
+.second h3 {
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.second-desc {
+  font-family: 'Panton';
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.second-block {
+  vertical-align: top;
+}
