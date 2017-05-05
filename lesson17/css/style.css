@@ -1,0 +1,72 @@
+/*Basic settings*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+/*Color mixins*/
+/*Main*/
+.main {
+  height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+.main h1 {
+  margin: 0;
+  padding-top: 8rem;
+  text-transform: uppercase;
+  color: #0bbaf0;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+.main h2 {
+  text-transform: uppercase;
+  color: #0bbaf0;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.main span {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 1px;
+  background-color: #c4c4c4;
+}
+.accordion {
+  margin-top: 4rem;
+}
+.tab {
+  display: inline-block;
+  width: 600px;
+  text-align: center;
+  background-color: #0bbaf0;
+  height: 40px;
+  line-height: 40px;
+  margin-top: .2rem;
+  z-index: 5;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.content {
+  height: auto;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+  display: none;
+  /*display: block;*/
+  margin: 0 auto;
+  color: #535353;
+  width: 590px;
+  border: 2px solid #dcdcdc;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+#content-1 {
+  display: block;
+}
