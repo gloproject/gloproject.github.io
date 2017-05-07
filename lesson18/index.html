@@ -34,7 +34,7 @@
 форм, вопросов и ответов.</h3>
 				<form id="form" action="thanks.html">
 					<input class="form-control" id="input-name" name="name" minlength="2" placeholder="Имя или никнейм" type="text">
-					<input class="form-control" id="input-email" name="name" minlength="2" placeholder="Email" type="email">
+					<input class="form-control" id="input-email" name="email" minlength="2" placeholder="Email" type="email">
 					<input class="form-control" id="input-password" name="password" minlength="2" placeholder="Пароль" type="password">
 					<button class="btn" type="submit">Сохранить
 					<picture>
@@ -78,7 +78,7 @@
 				email: {
 					required: 'Это поле обязательно для ввода',
 					minlength: 'Не менее 3х символов',
-					email: true
+					email: 'Введите корректный email'
 				},
 				password: {
 					required: 'Это поле обязательно для ввода',
