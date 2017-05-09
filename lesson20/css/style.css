@@ -1,0 +1,196 @@
+/*Basic settings*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
+}
+/*Color mixins*/
+/*Main*/
+::-webkit-input-placeholder {
+  color: #929292;
+}
+::-moz-placeholder {
+  color: #929292;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #929292;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #929292;
+}
+.main {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height: 100vh
+  /*background: url(../img/bg.jpg) no-repeat center center;*/
+  /*background-size: cover;*/
+}
+.main h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  margin-bottom: 0;
+  padding-top: 10rem;
+}
+.main h1 {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 5.6rem;
+  margin-bottom: 0;
+}
+.main h2 {
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+}
+.main img {
+  display: block;
+  margin: 0 auto;
+  width: 8rem;
+}
+.main input {
+  margin-top: 6rem;
+  display: inline-block;
+  text-align: center;
+  height: 4rem;
+  line-height: 4rem;
+  border: none;
+  outline: none;
+  width: 20rem;
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 7rem;
+  margin-right: -0.4rem;
+}
+.main .input-1 {
+  border-right: 2.5px solid #e3e3e3;
+}
+.main-link {
+  width: 20rem;
+  height: 4rem;
+  vertical-align: top;
+  margin-top: 6rem;
+  display: inline-block;
+  background-color: #1abc9c;
+}
+.main-link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+.main-link a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.main p {
+  margin: -0.7rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+.main p span {
+  color: #1abc9c;
+}
+.menu {
+  width: 100%;
+  height: 6rem;
+  line-height: 6rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #a69999;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.19);
+}
+.menu .logo {
+  margin-top: 1.3rem;
+}
+.menu a,
+.menu a:hover {
+  color: #a69999;
+  text-decoration: none;
+}
+.menu .row {
+  height: 6rem;
+  line-height: 6rem;
+}
+.menu .social {
+  height: 5rem;
+  margin-top: -0.5rem;
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+}
+.menu .fb {
+  display: inline-block;
+  width: 1.3rem;
+  margin-right: 2.3rem;
+}
+.menu .twitter {
+  display: inline-block;
+  width: 2.4rem;
+  margin-right: 2rem;
+}
+.menu .etc {
+  display: inline-block;
+  width: 2.5rem;
+}
+.second {
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+.second .smile {
+  width: 8rem;
+  margin-top: 7rem;
+}
+.second h3 {
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+}
+.second h2 {
+  font-weight: 300;
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+.second h2 span {
+  color: #1abc9c;
+}
+.second .phones {
+  width: 8rem;
+}
+.second .graph {
+  width: 10rem;
+}
+.second .lamp {
+  width: 6rem;
+}
+.second .row {
+  margin-top: 1rem;
+}
+.second h4 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.second p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
