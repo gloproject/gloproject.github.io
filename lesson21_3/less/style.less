@@ -1,0 +1,123 @@
+/*Basic setting*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+
+/*Color mixins */
+
+@shadow: rgb(27, 241, 173);
+@win: rgb(233, 132, 87);
+
+/*Main*/
+
+.main {
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding-top: 2rem;
+	span {
+		vertical-align: middle;
+		letter-spacing: 0.5rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 1.8rem;
+	}
+	h1 {
+		font-weight: 400;
+		font-size: 3.8rem;
+		text-transform: uppercase;
+		width: 50%;
+		text-align: center;
+		display: block;
+		margin: 25rem auto;
+	}
+	ul {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	li {
+		font-weight: 400;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+	a {
+		color: rgba(255,255,255,0.8);
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			border-bottom: 2px solid @shadow;
+		}
+	}
+}
+
+.second {
+	height: 100vh;
+	color: #000;
+	position: relative;
+	.dots {
+		z-index: 1;
+		padding-top: 25rem;
+	}
+	&-text {
+		z-index: 10;
+		position: absolute;
+		top: 0;
+		left: 35%;
+		display: inline-block;
+		width: 60%;
+		h4 {
+			padding-top: 15rem;
+			display: block;
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 1.8rem;
+		}
+		h2 {
+			display: block;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 6rem;
+			span {
+				color: @win;
+			}
+		}
+	}
+}
+
+.man {
+	vertical-align: top;
+	width: 35%;
+	display: inline-block;
+	transform: translateY(20%);
+}
+
+.grey {
+	position: absolute;
+	top: 1rem;
+	left: 50%;
+	z-index: 0;
+}
+
+.orange {
+	position: absolute;
+	top: 6rem;
+	left: 75%;
+}
+
+.plus {
+	position: absolute;
+	top: 75%;
+	left: 45%;
+}
+
+.third {
+	height: 100vh;
+}

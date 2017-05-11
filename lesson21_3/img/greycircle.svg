@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="117px" height="117px" viewBox="0 0 117 117">
+<clipPath id="clip0"><circle cx="58.50" cy="58.50" r="58.50"/></clipPath><defs>
+<symbol id="symbol0"><circle cx="58.50" cy="58.50" r="58.50"/></symbol></defs>
+<g><use xlink:href="#symbol0" x="0" y="0" width="117" height="117" fill="rgb(255,255,255)"/><use xlink:href="#symbol0" x="0" y="0" width="117" height="117" fill="none" stroke="rgb(233,233,233)" stroke-width="24.00px" clip-path="url(#clip0)"/></g></svg>
