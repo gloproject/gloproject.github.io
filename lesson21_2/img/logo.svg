@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="63px" height="76px" viewBox="0 0 63 76">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 10px;
+  font-family: "Segoe UI";
+  font-weight: 700;
+  fill: rgb(255,255,255);
+  text-transform: uppercase;
+}
+.style1 {
+  font-size: 150px;
+  font-family: "Segoe UI Light";
+  font-weight: 300;
+  fill: rgb(255,255,255);
+}
+]]></style>
+<text transform="translate(8.00,30.50)" class="style0"><tspan x="0.00 6.00 11.00 17.00 23.00" fill="rgb(255,255,255)">zest</tspan><tspan y="12.00" x="0.00 5.00 10.00 13.00 19.00 24.00 30.00 36.00 41.00" fill="rgb(255,255,255)">le zeste</tspan><tspan y="24.00" x="0.00 5.00 12.00 15.00 21.00 27.00 35.00 42.00 48.00" fill="rgb(255,255,255)">la scorza</tspan></text><text transform="translate(-3.57,75.78)" opacity="0.25" class="style1"><tspan x="0.00" fill="rgb(255,255,255)">z</tspan></text></svg>

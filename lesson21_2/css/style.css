@@ -1,0 +1,75 @@
+/*Basic settings*/
+html {
+  font-size: 10px;
+}
+body {
+  margin: 0;
+}
+/*Fonts*/
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI-Bold.eot');
+  src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUI-Bold.woff2') format('woff2'), url('../fonts/SegoeUI-Bold.woff') format('woff'), url('../fonts/SegoeUI-Bold.ttf') format('truetype'), url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/SegoeUI.eot');
+  src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'), url('../fonts/SegoeUI.woff2') format('woff2'), url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf') format('truetype'), url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.eot');
+  src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff2') format('woff2'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*Main*/
+.parallax-window {
+  height: 100vh;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+ul {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+li {
+  margin-right: 3rem;
+}
+a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Myriad Pro';
+  font-size: 1.4rem;
+}
+.copyright {
+  font-family: 'Segoe UI';
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+.contact {
+  font-family: 'Segoe UI';
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #fff;
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  text-align: right;
+}
