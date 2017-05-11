@@ -1,0 +1,172 @@
+/*Basic settings*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	overflow-x: hidden;
+}
+
+/*Color mixins */
+
+@bg-color: rgb(84, 163, 218);
+@menu-text: rgb(45, 57, 76);
+@free: rgb(255, 206, 84);
+@signup: rgb(119, 195, 68);
+@clients-color: rgb(248, 248, 248);
+
+/*Menu*/
+
+.menu {
+	height: 8rem;
+	line-height: 8rem;
+	position: relative;	
+}
+
+.logo {
+	display: inline-block;
+	vertical-align: center;
+	padding-bottom: 1.5rem;
+}
+
+ul {
+	display: inline-flex;
+	float: right;
+}
+
+li {
+	margin-right: 1.5rem;
+	a {
+		text-transform: uppercase;
+		color: lighten(@menu-text, 16%);
+		&:hover {
+			text-decoration: none;
+			color: lighten(@menu-text, 16%);
+		}
+	}
+}
+
+/*Main*/
+
+.main {
+	height: 90vh;
+	width: 100%;
+	background-color: @bg-color;
+	position: relative;
+	color: #fff;
+	&-text {
+		position: relative;
+		display: inline-block;
+		width: 70%;
+		height: 100%;
+		vertical-align: top;
+		&_block {
+			position: absolute;
+			top: 50%;
+			left: 70%;
+			width: 100%;
+			transform: translateX(-50%) translateY(-50%);
+			h1 {
+				width: 60%;
+				font-weight: 700;
+				font-size: 5rem;
+				text-transform: uppercase;
+			}
+			h3 {
+				font-weight: 300;
+				font-style: italic;
+				font-size: 2.4rem;
+				margin-bottom: 6rem;
+			}
+			p{
+				font-weight: 500;
+				font-size: 1.6rem;
+				span {
+					font-weight: 700;
+					text-transform: uppercase;
+					font-size: 1.6rem;
+					background-color: @free;
+					padding: 0.3rem;
+				}
+				margin-bottom: 2rem;
+			}
+			input {
+				width: 40rem;
+				border: none;
+				height: 4rem;
+				border-radius: 5px;
+				padding-left: 3rem;
+				outline: none;
+				margin-right: 3rem;
+				font-weight: 300;
+				font-size: 1.5rem;
+			}
+			button {
+				border: none;
+				background-color: @signup;
+				width: 8rem;
+				height: 4rem;
+				border-radius: 5px;
+				text-transform: uppercase;
+				outline: none;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+.clouds {
+	height: 80vh;
+	width: 90%;
+	/*background: url(../img/clouds.png) no-repeat center center;*/
+	/*background-size: 90%;*/
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*left: 0;*/
+	/*transform: translateX(-50%) translateY(-50%);*/
+}
+
+#scene {
+	position: absolute;
+	top: 0;
+}
+
+.layer-1 {
+	margin-top: 5rem;
+	margin-left: 5rem;
+	width: 100%;
+	height: 100%;
+}
+
+.layer-2 {
+	margin-left: 60%;
+	height: 100%;
+	width: 30%;
+	img {
+		position: absolute;
+		bottom: -1.6rem;
+		width: 35rem;
+	}
+}
+
+.clients {
+	height: 15rem;
+	line-height: 15rem;
+	background-color: @clients-color;
+}
+
+.client {
+	display: inline-block;
+	margin-right: 8rem;
+	&-5 {
+		margin-right: 0;
+	}
+}

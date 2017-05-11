@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tankapp</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300i,400,500,700" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="menu">
+    	<div class="container">
+    		<picture>
+    			<source type="image/svg+xml" srcset="img/logo.svg">
+    			<img class="logo" src="img/logo.png" alt="logo">
+    		</picture>	
+    		<ul class="list-inline">
+    			<li><a href="#">How it works</a></li>
+    			<li><a href="#">About Us</a></li>
+    			<li><a href="#">Contact Us</a></li>
+    			<li><a href="#">Blog</a></li>
+    		</ul>
+    	</div>
+    </div>
+
+    <div class="main">
+    	<div id="scene" data-calibrate-x="true"
+         data-calibrate-y="false"
+         data-invert-y="false"
+         data-limit-y="1">
+    		<div class="layer layer-1" data-depth="0.80">
+    			<img class="clouds" src="img/clouds.png" alt="clouds">
+    		</div>
+    		<div class="layer layer-2" data-depth="0.20">
+   				<img class="main-phone" src="img/phone.png" alt="phone">
+    		</div>
+    	</div>
+    	<div class="main-text">
+    		<div class="main-text_block">
+    			<h1>Track your next fuel shops</h1>
+				<h3>Monitor and Alert on all petrol bunks near to you</h3>
+				<p>Signup For <span>FREE</span></p>
+				<input type="email" placeholder="Your E-mail  Adress">
+				<button>SIGNUP</button>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="clients">
+    	<div class="container">
+    		<div class="client"><img src="img/evernote.png" alt="evernote"></div>
+    		<div class="client"><img src="img/microsoft.png" alt="microsoft"></div>
+    		<div class="client"><img src="img/google.png" alt="google"></div>
+    		<div class="client"><img src="img/sony.png" alt="sony"></div>
+    		<div class="client client-5"><img src="img/firefox.png" alt="firefox"></div>
+    	</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/jquery.parallax.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+   <!-- Custome scripts -->
+	<script>
+		$(document).ready(function(){
+			$('#scene').parallax();
+		});
+	</script>
+
+	<!-- <script>
+		 $(document).ready(function(){
+       		var scene = $('#scene').get(0);
+			var parallax = new Parallax(scene);
+    	});
+	</script> -->
+
+  </body>
+</html>	

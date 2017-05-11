@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="202px" height="31px" viewBox="0 0 202 31">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 41px;
+  font-family: "FontAwesome";
+  fill: rgb(255,206,84);
+}
+.style1 {
+  font-size: 41px;
+  font-family: "Myriad Pro";
+  font-weight: 400;
+  fill: rgb(115,180,226);
+}
+.style2 {
+  font-size: 41px;
+  font-family: "Nunito-Regular";
+  fill: rgb(51,51,51);
+  text-transform: uppercase;
+}
+.style3 {
+  font-size: 41px;
+  font-family: "Nunito-Regular";
+  fill: rgb(101,169,217);
+  text-transform: uppercase;
+}
+]]></style>
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.50" height="100.00" id="filter0">
+<feGaussianBlur in="SourceAlpha" stdDeviation="0.00" result="dsBlurOut1"/>
+<feFlood flood-color="rgb(0,0,0)" flood-opacity="0.06" result="dsFloodOut1"/>
+<feComposite in="dsFloodOut1" in2="dsBlurOut1" operator="in" result="dsShadow1"/>
+<feOffset in="dsShadow1" dx="0.50" dy="0.87" result="dsOffset1"/>
+<feComposite in="dsOffset1" in2="SourceAlpha" operator="out" result="dropShadow1"/>
+<feBlend in="dropShadow1" in2="SourceGraphic" mode="normal" result="sourceGraphic"/>
+</filter>
+<text transform="matrix(0.90,0.00,0.00,0.90,101.50,30.98)" filter="url(#filter0)"><tspan x="-94.96" fill="rgb(255,205,83)" class="style0"></tspan><tspan x="-74.46" fill="rgb(115,179,225)" class="style1"> </tspan><tspan x="-65.76" fill="rgb(50,50,50)" class="style2">T</tspan><tspan x="-48.46 -23.37 3.61" fill="rgb(50,50,50)" class="style2">ank</tspan><tspan x="26.24 51.33 73.14" fill="rgb(101,168,216)" class="style3">app</tspan></text></svg>
