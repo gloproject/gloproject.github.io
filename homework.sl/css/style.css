@@ -81,7 +81,7 @@ form input {
 form input:target {
   outline: none !important;
 }
-.form-control {
+.form-input {
   outline: none !important;
   box-shadow: none;
   border-radius: 0;
@@ -90,10 +90,10 @@ form input:target {
   border: none;
   border-bottom: 1px solid #888888;
 }
-.form-control:target {
+.form-input:target {
   outline: none !important;
 }
-.form-control:focus {
+.form-input:focus {
   outline: none;
   border-color: none;
   box-shadow: none;
