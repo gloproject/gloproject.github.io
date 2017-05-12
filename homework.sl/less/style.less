@@ -92,20 +92,22 @@ h3 {
 }
 
 .form-control {
-	border: none;
 	outline: none !important;
 	box-shadow: none;
-	border-bottom: 1px solid @line-color;
 	border-radius: 0;
 	padding-left: 2rem;
 	width: 80%;
 	&:target {
 		outline: none !important;
 	}
+	border: none;
+	border-bottom: 1px solid @line-color;
 }
 
 .form-control:focus {
 	outline: none;
+	border-color: none;
+	box-shadow: none;
 }
 
 #input-name {

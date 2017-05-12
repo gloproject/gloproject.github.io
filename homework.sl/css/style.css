@@ -82,19 +82,21 @@ form input:target {
   outline: none !important;
 }
 .form-control {
-  border: none;
   outline: none !important;
   box-shadow: none;
-  border-bottom: 1px solid #888888;
   border-radius: 0;
   padding-left: 2rem;
   width: 80%;
+  border: none;
+  border-bottom: 1px solid #888888;
 }
 .form-control:target {
   outline: none !important;
 }
 .form-control:focus {
   outline: none;
+  border-color: none;
+  box-shadow: none;
 }
 #input-name {
   background: url(../img/name.svg) no-repeat left center;
