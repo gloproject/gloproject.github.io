@@ -1,0 +1,89 @@
+/*Basic settings*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  margin: 0;
+}
+/*Fonts*/
+@font-face {
+  font-family: 'ChunkFive';
+  src: url('../fonts/ChunkFive-Roman.eot');
+  src: url('../fonts/ChunkFive-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/ChunkFive-Roman.woff2') format('woff2'), url('../fonts/ChunkFive-Roman.woff') format('woff'), url('../fonts/ChunkFive-Roman.ttf') format('truetype'), url('../fonts/ChunkFive-Roman.svg#ChunkFive-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-MediumItalic.eot');
+  src: url('../fonts/Lato-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-MediumItalic.woff2') format('woff2'), url('../fonts/Lato-MediumItalic.woff') format('woff'), url('../fonts/Lato-MediumItalic.ttf') format('truetype'), url('../fonts/Lato-MediumItalic.svg#Lato-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Heavy.eot');
+  src: url('../fonts/Lato-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato-Heavy.woff2') format('woff2'), url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.ttf') format('truetype'), url('../fonts/Lato-Heavy.svg#Lato-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/*Color mixins*/
+.form {
+  width: 35%;
+  height: 65%;
+  background-color: #4d59a1;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+h1 {
+  font-family: 'ChunkFive';
+  font-size: 6rem;
+}
+input {
+  outline: none;
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 1.4rem;
+  border: none;
+  height: 4rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.input-1 {
+  width: 70%;
+}
+.input-2,
+.imput-3 {
+  width: 34%;
+}
+.input-4 {
+  width: 70%;
+  height: 6rem;
+}
+button {
+  outline: none;
+  font-family: 'Lato';
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #c3f37f;
+  border: none;
+  color: #fff;
+  height: 5rem;
+  width: 25rem;
+  border-radius: 30px;
+}
+button:hover {
+  cursor: pointer;
+}
