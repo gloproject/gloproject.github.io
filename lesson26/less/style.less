@@ -1,0 +1,172 @@
+/*Basic settings*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+}
+
+/*Color mixin*/
+
+@enter-color: rgb(246, 154, 122);
+@btn-color: rgb(130, 197, 195);
+@line-color: rgb(136, 136, 136);
+
+/*Main*/
+
+.main {
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.wnd {
+	background-color: #fff;
+	/*height: 55rem;*/
+	padding-bottom: 3rem;
+	height: auto;
+	min-height: 55rem;
+	width: 80rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%) translateY(-50%);
+	&-block {
+		display: inline-block;
+		position: relative;
+		height: 100%;
+		&_1 {
+			width: 50%;
+			vertical-align: top;
+		}
+		&_2 {
+			width: 49%;
+			vertical-align: top;
+		}
+	}
+	&-img {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 90%;
+		/*transform: translateX(-50%) translateY(-50%);*/
+		transform: translateY(50%);
+		padding-left: 2rem;
+	}
+}
+
+h2 {
+		margin-top: 8rem;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 2.2rem;
+		font-weight: 700;
+		text-align: center;
+}
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	margin-bottom: 6rem;
+	text-align: center;
+}
+
+input {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	display: block;
+	margin: 2rem auto;
+	outline: none;
+	&:target {
+		outline: none;
+	}
+}
+
+.form-control {
+	border: none;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 1px solid @line-color;
+	border-radius: 0;
+	padding-left: 2rem;
+	width: 80%;
+	&:target {
+		outline: none;
+	}
+}
+
+#input-name {
+	background: url(../img/name.svg) no-repeat left center;
+}
+
+#input-email {
+	background: url(../img/mail.svg) no-repeat left center;
+}
+
+#input-password {
+	background: url(../img/password.svg) no-repeat left center;
+}
+
+.btn {
+	background-color: @btn-color;
+	display: block;
+	margin: 0 auto;
+	border-radius: 20px;
+	padding: 1rem 2.5rem;
+	color: #fff;
+	position: relative;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	&:hover {
+		cursor: pointer;
+		color: #fff;
+	}
+	&-img {
+		width: 7%;
+	}
+}
+
+span {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 400;
+	padding-left: 4rem;
+	padding-right: 1rem;
+}
+ a {
+ 	color: @enter-color;
+ 	&:hover {
+ 		text-decoration: none;
+ 		color: @enter-color;
+ 	}
+ 	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.4rem;
+	font-weight: 500;
+ }
+
+ .thanks {
+ 	display: block;
+ 	margin: 0 auto;
+ 	padding-top: 15rem;
+ }
+
+ h1 {
+ 	padding-top: 5rem;
+ 	text-align: center;
+ 	font-family: 'Open Sans', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	color: @btn-color;
+ }

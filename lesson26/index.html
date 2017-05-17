@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Заголовок</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu:400,500" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44664076 = new Ya.Metrika({ id:44664076, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44664076" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  <body>
+  	
+  	<div class="main">
+  		<div class="wnd">
+  			<div class="wnd-block wnd-block_1">
+  				<img class="wnd-img" src="img/logo.png" alt="">	
+  			</div>
+  			<div class="wnd-block wnd-block_2">
+  				<h2>Сохрани свой аккаунт</h2>
+  				<h3>Получи бесплатно неограниченное количество  
+форм, вопросов и ответов.</h3>
+				<form id="form" action="thanks.html">
+					<input class="form-control" id="input-name" name="name" minlength="2" placeholder="Имя или никнейм" type="text">
+					<input class="form-control" id="input-email" name="email" minlength="2" placeholder="Email" type="email">
+					<input class="form-control" id="input-password" name="password" minlength="2" placeholder="Пароль" type="password">
+					<button class="btn" type="submit">Сохранить
+					<picture>
+						<source type="image/svg+xml" srcset="img/right.svg">
+						<img class="btn-img" src="img/right.png" alt="right">
+					</picture>	</button>
+					<span>Уже есть аккаунт?</span>
+					<a href="#">Войти</a>
+				</form>
+  			</div>
+  		</div>
+  	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+	<script>
+		$('#form').validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				},
+				email: {
+					required: true,
+					minlength: 3,
+					email: true
+				},
+				password: {
+					required: true,
+					minlength: 2
+				}
+			},
+			messages: {
+				name: {
+					required: 'Это поле обязательно для ввода',
+					minlength: 'Не менее 2х символов'
+				},
+				email: {
+					required: 'Это поле обязательно для ввода',
+					minlength: 'Не менее 3х символов',
+					email: 'Введите корректный email'
+				},
+				password: {
+					required: 'Это поле обязательно для ввода',
+					minlength: 'Не менее 2х символов'
+				}
+			}
+		});
+	</script>
+
+   <!-- Custome scripts -->
+
+  </body>
+</html>	
