@@ -1,0 +1,157 @@
+/*Basic settings*/
+
+html {
+	font-size: 10px;
+}
+
+body {
+	height: 100vh;
+	background: url(../img/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*Fonts*/
+
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/BlissPro.eot');
+	src: url('../fonts/BlissPro.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro.woff2') format('woff2'),
+		url('../fonts/BlissPro.woff') format('woff'),
+		url('../fonts/BlissPro.ttf') format('truetype'),
+		url('../fonts/BlissPro.svg#BlissPro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/BlissPro-ExtraLight.eot');
+	src: url('../fonts/BlissPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-ExtraLight.woff2') format('woff2'),
+		url('../fonts/BlissPro-ExtraLight.woff') format('woff'),
+		url('../fonts/BlissPro-ExtraLight.ttf') format('truetype'),
+		url('../fonts/BlissPro-ExtraLight.svg#BlissPro-ExtraLight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bliss Pro';
+	src: url('../fonts/BlissPro-Medium.eot');
+	src: url('../fonts/BlissPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BlissPro-Medium.woff2') format('woff2'),
+		url('../fonts/BlissPro-Medium.woff') format('woff'),
+		url('../fonts/BlissPro-Medium.ttf') format('truetype'),
+		url('../fonts/BlissPro-Medium.svg#BlissPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+/*Color mixins*/
+
+@price: rgb(224, 169, 19);
+@header: rgb(51, 51, 51);
+@text: rgb(92, 92, 92);
+@rate: rgb(246, 191, 46);
+@btn: rgb(244, 193, 59);
+@amount: rgb(51, 51, 51);
+
+/*Main*/
+
+.wnd {
+	width: 80%;
+	height: 90%;
+	background-color: #fff;
+	border-radius: 5px;
+	font-family: 'Bliss Pro';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	&-close {
+		width: 3rem;
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+	}
+	&-img {
+		height: 100%;
+		width: 49%;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-chair {
+		height: 80%;
+	}
+	&-text {
+		width: 50%;
+		height: 80%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	h1 {
+		font-weight: 500;
+		font-size: 3rem;
+		color: @header;
+		margin-bottom: 0;
+		margin-top: 4rem;
+	}
+	h2 {
+		margin-top: 1rem;
+		font-weight: normal;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		/*margin-bottom: 0;*/
+	}
+	&-price {
+		font-weight: 200;
+		font-size: 6rem;
+		color: @price;
+		margin-right: 5rem;
+	}
+	&-like {
+		width: 2rem;
+	}
+	&-rate {
+		margin-left: 1rem;
+		font-weight: 200;
+		font-size: 2.5rem;
+		color: @rate;
+	}
+	p {
+		/*margin-top: 0;*/
+		font-weight: normal;
+		font-size: 1.8rem;
+		color: @text;
+		margin-bottom: 5rem;
+	}
+	&-edit {
+		width: 4rem;
+		vertical-align: middle;
+	}
+	&-amount {
+		vertical-align: middle;
+		font-weight: 200;
+		font-size: 4rem;
+		color: @amount;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	&-add {
+		margin-top: 2rem;
+		width: 25rem;
+		height: 6rem;
+		line-height: 6rem;
+		text-align: center;
+		background-color: @btn;
+		font-weight: 500;
+		font-size: 2rem;
+		border-radius: 5rem;
+		a, a:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+}
